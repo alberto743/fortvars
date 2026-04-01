@@ -1,0 +1,34 @@
+# SPDX-FileCopyrightText: 2026 ENEA
+# SPDX-FileContributor: Alberto P
+#
+# SPDX-License-Identifier: MPL-2.0
+
+[build-system]
+requires = ["setuptools >= 77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fortvars"
+version = "0.1.1"
+authors = [
+    { name="Alberto P", email="4104972+alberto743@users.noreply.github.com" },
+]
+description = "Detect and summarize the variables and constant in a given Fortran unit"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "MPL-2.0"
+license-files = ["LICENSES/*"]
+dependencies = [
+]
+
+[project.urls]
+Homepage = "https://github.com/alberto743/fortvars"
+Issues = "https://github.com/alberto743/fortvars/issues"
+
+
+[project.gui-scripts]
+fortran_variables = "fortvars.fortran_variables:main"
