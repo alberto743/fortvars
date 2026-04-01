@@ -9,7 +9,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "fortvars"
-version = "0.1.1"
+version = "0.1.2"
 authors = [
     { name="Alberto P", email="4104972+alberto743@users.noreply.github.com" },
 ]
@@ -23,6 +23,7 @@ classifiers = [
 license = "MPL-2.0"
 license-files = ["LICENSES/*"]
 dependencies = [
+    "pandas"
 ]
 
 [project.urls]
