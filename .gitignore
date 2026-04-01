@@ -1,0 +1,9 @@
+# SPDX-FileCopyrightText: 2026 ENEA
+# SPDX-FileContributor: Alberto P
+#
+# SPDX-License-Identifier: MPL-2.0
+
+.vscode/
+__pycache__/
+*.egg-info/
+.ipynb_checkpoints/
