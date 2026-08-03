@@ -9,7 +9,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "fortvars"
-version = "0.1.2"
+version = "0.2.0"
 authors = [
     { name="Alberto P", email="4104972+alberto743@users.noreply.github.com" },
 ]
@@ -26,10 +26,16 @@ dependencies = [
     "pandas"
 ]
 
+[project.optional-dependencies]
+test = ["pytest>=7"]
+
 [project.urls]
 Homepage = "https://github.com/alberto743/fortvars"
 Issues = "https://github.com/alberto743/fortvars/issues"
 
 
-[project.gui-scripts]
+[project.scripts]
 fortran_variables = "fortvars.fortran_variables:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
